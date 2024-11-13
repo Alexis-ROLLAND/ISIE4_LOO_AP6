@@ -40,7 +40,7 @@ class Tirelire{
         virtual ~Tirelire() = default;
 
         [[nodiscard]]   bool            estVide() noexcept {return this->Vault.empty();};
-        [[nodiscard]]   auto            getNbCoins() noexcept {return this->Vault.size();};    /**< auto return type to automaticaly adjust ti size() return type. Could ba a size_t or possibly an unsigned int */
+        [[nodiscard]]   auto            getNbCoins() noexcept {return this->Vault.size();};    /**< auto return type to automaticaly adjust to size() return type. Could ba a size_t or possibly an unsigned int */
         void    Add(Piece Coin);
         
         [[nodiscard]]   unsigned int    getTotal() noexcept;  
